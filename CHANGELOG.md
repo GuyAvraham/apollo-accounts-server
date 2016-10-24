@@ -1,4 +1,6 @@
 # Changelog
+## v0.3.0
+* BREAKING CHANGE: Upgrade apollo-server major version leads to a change of API when using this package.
 
 ## v0.2.0
 * Added client oriented create account and login

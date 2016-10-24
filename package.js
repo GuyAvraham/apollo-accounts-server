@@ -1,8 +1,8 @@
 Package.describe({
   name: 'davidyaha:apollo-accounts-server',
-  version: '0.2.0',
+  version: '0.3.0',
   summary: 'meteor-accounts-password package wrapped with GraphQL schema and resolvers',
-  git: 'https://github.com/davidyaha/apollo-accounts-server'
+  git: 'https://github.com/GuyAvraham/apollo-accounts-server'
 });
 
 Package.onUse(function (api) {
