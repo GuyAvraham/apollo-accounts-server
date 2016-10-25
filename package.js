@@ -1,6 +1,6 @@
 Package.describe({
   name: 'davidyaha:apollo-accounts-server',
-  version: '0.3.0',
+  version: '0.3.2',
   summary: 'meteor-accounts-password package wrapped with GraphQL schema and resolvers',
   git: 'https://github.com/GuyAvraham/apollo-accounts-server'
 });
@@ -11,7 +11,7 @@ Package.onUse(function (api) {
     'ecmascript',
     'check',
     'accounts-password',
-    'apollo@0.1.0-beta',
+    'apollo@0.1.2',
     'tmeasday:check-npm-versions@0.3.1'
   ]);
   

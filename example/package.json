@@ -5,10 +5,12 @@
     "start": "meteor run"
   },
   "dependencies": {
-    "apollo-server": "^0.1.5",
+    "apollo-server": "^0.3.3",
+    "body-parser": "^1.15.2",
     "express": "^4.14.0",
-    "graphql": "^0.6.2",
-    "graphql-tools": "^0.6.3",
+    "graphql": "^0.7.2",
+    "graphql-tools": "^0.8.0",
+    "graphql-typings": "0.0.1-beta-2",
     "meteor-node-stubs": "~0.2.0"
   }
 }
