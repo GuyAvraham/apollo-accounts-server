@@ -43,7 +43,25 @@ export const rootObjectsExtension = `
   }
 `;
 
-const schema = `
+export const schema = `
+   type Token {
+    userId: ID!
+    token: String!
+    tokenExpiration: Float!
+  }
+  
+  input UserPasswordInput {
+    email: String
+    username: String
+    password: String
+  }
+
+  type User {
+    id: ID!
+    email: String
+    username: String
+  }
+
   type RootQuery {
     ${queries}
   }

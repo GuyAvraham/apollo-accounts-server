@@ -9,6 +9,6 @@ export default {
   resolvers
 }
 
-export {typeDefs, rootObjectsExtension} from './imports/api/schema';
+export {typeDefs, rootObjectsExtension, schema as schemaString} from './imports/api/schema';
 
 export {UserAccount};
