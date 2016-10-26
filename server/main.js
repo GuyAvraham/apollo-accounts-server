@@ -1,14 +1,15 @@
 import '../check-npm.js';
 
-import schema from './imports/api/schema';
+import {typeDefs, schema} from './imports/api/schema';
 import resolvers from './imports/api/resolvers';
 import UserAccount from './imports/models/user-account';
+import { makeExecutableSchema } from 'graphql-tools';
 
-export default {
-  schema,
-  resolvers
-}
+export default makeExecutableSchema({
+	typeDefs: [typeDefs, schema],
+	resolvers: resolvers
+});
 
-export {typeDefs, rootObjectsExtension, schema as schemaString} from './imports/api/schema';
+export {typeDefs, rootObjectsExtension, schema} from './imports/api/schema';
 
-export {UserAccount};
+export {UserAccount, resolvers};

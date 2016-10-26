@@ -1,11 +1,9 @@
-import {buildSchemaFromTypeDefinitions} from 'graphql-tools';
-
-export const queries = `
+const queries = `
   me: User
   user(id: ID!): User
 `;
 
-export const mutations = `
+const mutations = `
   createAccount(user: UserPasswordInput): User
   createAccountAndLogin(user: UserPasswordInput): Token
   loginWithPassword(user: UserPasswordInput): Token
@@ -44,24 +42,6 @@ export const rootObjectsExtension = `
 `;
 
 export const schema = `
-   type Token {
-    userId: ID!
-    token: String!
-    tokenExpiration: Float!
-  }
-  
-  input UserPasswordInput {
-    email: String
-    username: String
-    password: String
-  }
-
-  type User {
-    id: ID!
-    email: String
-    username: String
-  }
-
   type RootQuery {
     ${queries}
   }
@@ -75,5 +55,3 @@ export const schema = `
     mutation: RootMutation
   }
 `;
-
-export default buildSchemaFromTypeDefinitions([schema, typeDefs]);
